@@ -1,13 +1,16 @@
 # DESCRIPTION
-<p align="center">
+
 This program offers a few functionalities to pair with a PdaNet setup.
 If can silently force the computer to host and upkeep a Windows Hotspot for using a computer as an access point for your PdaNet connection. This can be a weaker option for people with weaker WiFi cards though, because the quality of your WiFi card on your PdaNet-connected Windows PC will bottleneck the stability and speed of your connection. If said PC has a very good dedicated (or even onboard) WiFi card/chip, then this can be a solid choice. But the more clients / devices you have connected to your Windows Hotspot, the more the quality will degrade even if you have a very good WiFi card/chip.
-  
+<p align="center">
 I prefer to use a laptop with a Type-C port and an ethernet port as a "Modem" PC, connecting it to PdaNet, connecting the laptop via ethernet to the WAN port of a router (the modem port), and then configuring windows connection sharing of the PdaNet Broadband adapter to share its internet connection to the ethernet port, then connecting PCs directly to the router via ethernet to its LAN ports for a much more stable and fast dedicated connection. But this also serves up a much more stable and fast WiFi connection as well because you can use a router to host the network. I am using an ASUS router (RT-AC56R) to do this, and I use this modem software to autonomously upkeep 95% of issues that can occur with PdaNet in the background. The only intervention this method requires is an occasional manual reboot of the phone every 5-7 days whenever the speeds get a bit slower. When I do this reboot, I ensure to wipe the phone's cache and perform a repair apps routine in the Boot Recovery Menu of the Android phone, and this system works beautifully. Its the exact same as having a cable internet connection, as I have 5G speeds and unlimited data.
 </p>
 <br>
 <br>
-<br>
+## SETUP
+<p align="center">
+1.) 
+</p>
 
 ## "modemConfig.cfg" SETTINGS FILE TABLE
 <p align="center">
