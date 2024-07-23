@@ -19,7 +19,7 @@ I prefer to use a laptop with a Type-C port and an ethernet port as a "Modem" PC
 ON THE MODEM PC (OR THE PC YOU WANT TO USE WINDOWS HOTSPOT WITH PDANET):<br>
 1.) Download and install [AutoHotkey version 1.1](https://autohotkey.com/download/ahk-install.exe).
 
-2.) Download either the [latest release of this modem script](https://github.com/A-gent/PDAnet-Modem-PC-Handler/releases/download/v1.0.097/ModemHandler_v1.0.097.zip) OR [directly download the repo files](https://github.com/A-gent/PDAnet-Modem-PC-Handler/archive/refs/heads/main.zip) (if you download the repo files you will need to compile them modem.ahk file manually by right click and clicking compile script).
+2.) Download either the [latest release of this modem script](https://github.com/A-gent/PDAnet-Modem-PC-Handler/releases/download/v1.0.097/ModemHandler_v1.0.097.zip) OR [directly download the repo files](https://github.com/A-gent/PDAnet-Modem-PC-Handler/archive/refs/heads/main.zip) (if you download the repo files you will need to compile the modem.ahk file manually by right click and clicking compile script).
 
 3.) Unzip the contents of this zip file to any location that you wish it to run from. (If you don't want to use the pre-compiled .exe file, compile the .ahk file manually by right clicking and clicking compile script)
   
