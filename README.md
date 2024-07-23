@@ -16,16 +16,16 @@ I prefer to use a laptop with a Type-C port and an ethernet port as a "Modem" PC
 
 <p align="left">
 
-  
+ON THE MODEM PC (OR THE PC YOU WANT TO USE WINDOWS HOTSPOT WITH PDANET):
 1.) Download and install [AutoHotkey version 1.1](https://autohotkey.com/download/ahk-install.exe).
 
-2.) Download either the [latest release of this modem script](google.com) or [directly download the repo files](https://github.com/A-gent/PDAnet-Modem-PC-Handler/archive/refs/heads/main.zip).
+2.) Download either the [latest release of this modem script](google.com) OR [directly download the repo files](https://github.com/A-gent/PDAnet-Modem-PC-Handler/archive/refs/heads/main.zip).
 
 3.) Unzip the contents of this zip file to any location that you wish it to run from. (If you don't want to use the pre-compiled .exe file, compile the .ahk file manually by right clicking and clicking compile script)
   
-4.) Move the 4 powershell script files:<br>"start_hotspot_off_verify.ps1", "start_hotspot_on_verify.ps1", "start_hotspot_verify.ps1", and "start_hotspot_verify_only.ps1"<br> to the root of your system drive ("C:" drive).
+4.) Move the 4 powershell script files:<br>"start_hotspot_off_verify.ps1", "start_hotspot_on_verify.ps1", "start_hotspot_verify.ps1", and "start_hotspot_verify_only.ps1"<br> to the root of your system drive ("C:" drive) OR .
 
-5.) 
+5.) Hit windows key, type task scheduler, press enter when it appears in the list. On the left side, right click "Task Scheduler Library" and select Create Task. Give it a name, check "run with the highest priviledges" 
 </p>
 
 ## "modemConfig.cfg" SETTINGS FILE TABLE
