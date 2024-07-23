@@ -16,9 +16,7 @@ I prefer to use a laptop with a Type-C port and an ethernet port as a "Modem" PC
 
 <p align="left">
 
-  [GitHub Pages](https://pages.github.com/)
   
-1.) Install [AutoHotkey version 1.1](https://autohotkey.com/download/ahk-install.exe) 
 1.) Install [AutoHotkey version 1.1](https://autohotkey.com/download/ahk-install.exe) 
 
 2.) Unzip the contents of this zip file to any location that you wish it to run from. (If you don't want to use the pre-compiled .exe file, compile the .ahk file manually by right clicking and clicking compile script)
