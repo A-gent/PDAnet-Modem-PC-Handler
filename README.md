@@ -16,6 +16,7 @@ I prefer to use a laptop with a Type-C port and an ethernet port as a "Modem" PC
 
 <p align="left">
 1.) Unzip the contents of this zip file to any location that you wish it to run from.
+  
 2.) Move the powershell script files:<br>"start_hotspot_off_verify.ps1", "start_hotspot_on_verify.ps1", "start_hotspot_verify.ps1", and "start_hotspot_verify_only.ps1"<br> to the root of your system drive ("C:" drive).
 </p>
 
