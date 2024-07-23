@@ -25,8 +25,10 @@ ON THE MODEM PC (OR THE PC YOU WANT TO USE WINDOWS HOTSPOT WITH PDANET):<br>
   
 4.) Move the 4 powershell script files:<br>"start_hotspot_off_verify.ps1", "start_hotspot_on_verify.ps1", "start_hotspot_verify.ps1", and "start_hotspot_verify_only.ps1"<br> to the root of your system drive ("C:" drive) OR .
 
-5.) Hit windows key, type task scheduler, press enter when it appears in the list. On the left side, right click "Task Scheduler Library" and select Create Task. Give it a name, check "run with the highest priviledges" 
+5.) Hit windows key, type task scheduler, press enter when it appears in the list. <br><br> -On the left side, right click "Task Scheduler Library" and select Create Task. <br> -Give it a name, check "run with the highest priviledges", set "configure for" to Windows 10. <br> -Click triggers tab, click new, click the drop menu next to "Begin the task:", then select "at log-on", tick the "Specific user" bubble, press ok. <br> -Click the actions tab, click new, click browse and then navigate to the compiled .exe script application file wherever you unzipped the modem script to, press okay. <br> -Click conditions tab, uncheck "Start the task only if the computer is on AC power" (Unless you prefer it that way). <br> -Click settings tab, click the drop menu next to "Stop the task if it runs longer than:" and change it to 1 hour, click the drop menu that says "Do not start a new instance" and change it to "Stop the existing instance". <br> -Press ok. Now the modem script will launch itself every time you first log into your user account.
+
 </p>
+<br><br>
 
 ## "modemConfig.cfg" SETTINGS FILE TABLE
 <p align="center">
