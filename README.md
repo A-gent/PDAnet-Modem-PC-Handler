@@ -6,16 +6,16 @@ If the "AutoHotspot" switch in the modemConfig.cfg file equals 1, it will Force 
 
 | Config File Command   |      Section      |  Value Range | Default Value | Description |
 |-----------------------|:-----------------:|-------------:|--------------:|------------:|
-| AutoHotspot |                    SWITCHES       |   0-1 |  1  |    |
-| AutoConnect |                    SWITCHES       |   0-1 |  1  |    |
-| DoubleCleanupPass |              SWITCHES       |   0-1 |  1  |    |
-| HotspotAdapterSetAutoDHCP |      SWITCHES       |   0-1 |  1  |    |
-| AutoConnectSpeed |      CONFIG                  |    $1 |    |    |
-| AutoConnectDeleteTestSpeed |    CONFIG          |    $1 |    |    |
-| HotspotExecSpeed |      CONFIG                  |    $1 |    |    |
-| HotspotCleanupSpeed |      CONFIG               |    $1 |    |    |
-| HotspotAdapterName |      CONFIG                |    $1 |    |    |
-| HotspotAdapterDHCPbat |      CONFIG             |    $1 |    |    |
+| AutoHotspot |                    SWITCHES       |   0-1 |             1  |   If enabled, runs a timer thread that executes a powershell script to force a Windows Hotspot open, and periodically re-runs this script to keep it open. Automatically closes powershell instances left open in the background. |
+| AutoConnect |                    SWITCHES       |   0-1 |             1  |    |
+| DoubleCleanupPass |              SWITCHES       |   0-1 |             1  |   HotSpotCleanupThread |
+| HotspotAdapterSetAutoDHCP |      SWITCHES       |   0-1 |             1  |    |
+| AutoConnectSpeed |      CONFIG                  |   N/A |         14000  |    |
+| AutoConnectDeleteTestSpeed |    CONFIG          |   N/A |    |    |
+| HotspotExecSpeed |      CONFIG                  |   N/A |    |    |
+| HotspotCleanupSpeed |      CONFIG               |   N/A |    |    |
+| HotspotAdapterName |      CONFIG                |   N/A |    |    |
+| HotspotAdapterDHCPbat |      CONFIG             |   N/A |    |    |
 | Container |      PDANET                         |    $1 |    |    |
 | Executable |      PDANET                        |    $1 |    |    |
 | DismissPdaMessages |      PDANET                |    $1 |    |    |
