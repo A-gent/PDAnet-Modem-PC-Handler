@@ -16,10 +16,10 @@ If the "AutoHotspot" switch in the modemConfig.cfg file equals 1, it will Force 
 | HotspotCleanupSpeed |      CONFIG               |   USER DEFINED          | 21000 |    |
 | HotspotAdapterName |      CONFIG                |   USER DEFINED          | Local Area Connection* 14 |    |
 | HotspotAdapterDHCPbat |      CONFIG             |       N/A               |  set-DHCP.bat |    |
-| Container |      PDANET                         |   USER DEFINED          |      |    |
-| Executable |      PDANET                        |        $1               |      |    |
-| DismissPdaMessages |      PDANET                |        $1               |      |    |
-| DismissMessageSpeed |      PDANET               |        $1               |      |    |
-| AppTitleRoot |      ENGINE                      |        $1               |      |    |
-| Debugger |      DEBUG                           |        $1               |      |    |
+| Container |      PDANET                         |   USER DEFINED          | C:\Program Files (x86)\PdaNet for Android |    |
+| Executable |      PDANET                        |   USER DEFINED          |   PdaNetPC.exe   |    |
+| DismissPdaMessages |      PDANET                |        0-1              |   1  |    |
+| DismissMessageSpeed |      PDANET               |   USER DEFINED          |      |    |
+| AppTitleRoot |      ENGINE                      |   USER DEFINED          |      |    |
+| Debugger |      DEBUG                           |        0-1              |      |    |
 | DebuggerLevel |      DEBUG                      |    1, 2, 3, 4, 4.1, 4.2 |   1  |    |
