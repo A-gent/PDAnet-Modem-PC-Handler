@@ -17,13 +17,15 @@ I prefer to use a laptop with a Type-C port and an ethernet port as a "Modem" PC
 <p align="left">
 
   
-1.) Install [AutoHotkey version 1.1](https://autohotkey.com/download/ahk-install.exe) 
+1.) Download and install [AutoHotkey version 1.1](https://autohotkey.com/download/ahk-install.exe).
 
-2.) Unzip the contents of this zip file to any location that you wish it to run from. (If you don't want to use the pre-compiled .exe file, compile the .ahk file manually by right clicking and clicking compile script)
+2.) Download either the [latest release of this modem script](google.com) or [directly download the repo files]([google.com](https://github.com/A-gent/PDAnet-Modem-PC-Handler/archive/refs/heads/main.zip).
+
+3.) Unzip the contents of this zip file to any location that you wish it to run from. (If you don't want to use the pre-compiled .exe file, compile the .ahk file manually by right clicking and clicking compile script)
   
-3.) Move the 4 powershell script files:<br>"start_hotspot_off_verify.ps1", "start_hotspot_on_verify.ps1", "start_hotspot_verify.ps1", and "start_hotspot_verify_only.ps1"<br> to the root of your system drive ("C:" drive).
+4.) Move the 4 powershell script files:<br>"start_hotspot_off_verify.ps1", "start_hotspot_on_verify.ps1", "start_hotspot_verify.ps1", and "start_hotspot_verify_only.ps1"<br> to the root of your system drive ("C:" drive).
 
-4.) 
+5.) 
 </p>
 
 ## "modemConfig.cfg" SETTINGS FILE TABLE
