@@ -37,9 +37,9 @@ ON THE MODEM PC (OR THE PC YOU WANT TO USE WINDOWS HOTSPOT WITH PDANET):<br>
 
 6.) Enable Powershell script execution: <br> -Hit windows key, type powershell.exe, right click and right as administrator. <br> -In the Powershell terminal run this command:  set-executionpolicy remotesigned <br> -When prompted if you are sure, just type A and hit enter to say "Yes To All".
 
-7.) *OPTIONAL!*: Add PdaNetPC.exe to your Razer Cortex as a game, and configure Razer Cortex's boosting settings and turn on auto-boost, so this way any time PdaNetPC.exe launches, it will automatically apply your boosts. Also optionally, use Razer Cortex to do the network tweaks, but be careful which services you disable in your Razer Cortex booster settings. If you don't want to deal with this, just skip the Cortex and change "LaunchRazerCortex=1" to "LaunchRazerCortex=0" under the "CORTEX" section of the confile file to disable Cortex module.
+7.) Now configure your settings inside of the "modemConfig.cfg" file (with notepad), using the table below, then reboot your PC. The script will be running in your taskbar tray. If you right click it, there are controls to micro-manage the application directly from its Tray Menu if you wish to do so, but otherwise just let it autopilot.
 
-8.) Now configure your settings inside of the "modemConfig.cfg" file (with notepad), using the table below, then reboot your PC. The script will be running in your taskbar tray. If you right click it, there are controls to micro-manage the application directly from its Tray Menu if you wish to do so, but otherwise just let it autopilot.
+8.) *OPTIONAL!*: Add PdaNetPC.exe to your Razer Cortex as a game, and configure Razer Cortex's boosting settings and turn on auto-boost, so this way any time PdaNetPC.exe launches, it will automatically apply your boosts. Also optionally, use Razer Cortex to do the network tweaks, but be careful which services you disable in your Razer Cortex booster settings. If you don't want to deal with this, just skip the Cortex and change "LaunchRazerCortex=1" to "LaunchRazerCortex=0" under the "CORTEX" section of the confile file to disable Cortex module.
 <br>
 
 </p>
