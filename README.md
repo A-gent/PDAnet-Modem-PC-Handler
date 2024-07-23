@@ -15,9 +15,13 @@ I prefer to use a laptop with a Type-C port and an ethernet port as a "Modem" PC
 ## SETUP
 
 <p align="left">
-1.) Unzip the contents of this zip file to any location that you wish it to run from.
+1.) Install [AutoHotkey version 1.1](https://autohotkey.com/download/ahk-install.exe)
+
+2.) Unzip the contents of this zip file to any location that you wish it to run from. (If you don't want to use the pre-compiled .exe file, compile the .ahk file manually by right clicking and clicking compile script)
   
-2.) Move the powershell script files:<br>"start_hotspot_off_verify.ps1", "start_hotspot_on_verify.ps1", "start_hotspot_verify.ps1", and "start_hotspot_verify_only.ps1"<br> to the root of your system drive ("C:" drive).
+3.) Move the 4 powershell script files:<br>"start_hotspot_off_verify.ps1", "start_hotspot_on_verify.ps1", "start_hotspot_verify.ps1", and "start_hotspot_verify_only.ps1"<br> to the root of your system drive ("C:" drive).
+
+4.) 
 </p>
 
 ## "modemConfig.cfg" SETTINGS FILE TABLE
