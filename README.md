@@ -6,10 +6,10 @@ If the "AutoHotspot" switch in the modemConfig.cfg file equals 1, it will Force 
 
 | Config File Command   |      Section      |  Value Range | Default Value | Description |
 |-----------------------|:-----------------:|-------------:|--------------:|------------:|
-| AutoHotspot |                    SWITCHES       | $1600 |    |    |
-| AutoConnect |                    SWITCHES       |   $12 |    |    |
-| DoubleCleanupPass |              SWITCHES       |    $1 |    |    |
-| HotspotAdapterSetAutoDHCP |      SWITCHES       |    $1 |    |    |
+| AutoHotspot |                    SWITCHES       |   0-1 |  1  |    |
+| AutoConnect |                    SWITCHES       |   0-1 |  1  |    |
+| DoubleCleanupPass |              SWITCHES       |   0-1 |  1  |    |
+| HotspotAdapterSetAutoDHCP |      SWITCHES       |   0-1 |  1  |    |
 | AutoConnectSpeed |      CONFIG                  |    $1 |    |    |
 | AutoConnectDeleteTestSpeed |    CONFIG          |    $1 |    |    |
 | HotspotExecSpeed |      CONFIG                  |    $1 |    |    |
@@ -22,4 +22,4 @@ If the "AutoHotspot" switch in the modemConfig.cfg file equals 1, it will Force 
 | DismissMessageSpeed |      PDANET               |    $1 |    |    |
 | AppTitleRoot |      ENGINE                      |    $1 |    |    |
 | Debugger |      DEBUG                           |    $1 |    |    |
-| DebuggerLevel |      DEBUG                      |    1, 2, 3, 4, 4.1, 4.2 |    |    |
+| DebuggerLevel |      DEBUG                      |    1, 2, 3, 4, 4.1, 4.2 |  1  |    |
