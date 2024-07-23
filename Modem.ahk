@@ -219,6 +219,29 @@ If(DismissMessages="1")
 }
 
 
+IniRead, aLaunchRazerCortex, %config_path%, CORTEX, LaunchRazerCortex, 1
+IniRead, aLaunchRazerCortexDelay, %config_path%, CORTEX, LaunchDelay, 1
+IniRead, aCortexWindowDelay, %config_path%, CORTEX, WindowCloseDelay, -7000
+IniRead, aCortexWinWaitDelay, %config_path%, CORTEX, WindowWaitDelay, 12
+If(aLaunchRazerCortex="1")
+{
+SetTimer, LaunchRazerCortexLabel, %aLaunchRazerCortexDelay%
+}
+If(aLaunchRazerCortex="1")
+{
+WinWait, Razer Cortex,, %aCortexWinWaitDelay%
+SetTimer, CloseCortexWindow, %aCortexWindowDelay%
+}
+
+
+IniRead, aLaunchPDANet, %config_path%, PDANET, LaunchPDAnet, 1
+IniRead, aLaunchPDANetDelay, %config_path%, PDANET, LaunchDelay, 1
+If(aLaunchPDANet="1")
+{
+SetTimer, LaunchPDANetLabel, %aLaunchPDANetDelay%
+}
+
+
 
 GLOBAL ReRunThreadsAutoexecFlag := "0"  ;; Set the toggle flag for autoexec exection of RunThreads to off, so we know any subsequent executions of RunThreads is via the TrayMenu call and not autoexec.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -544,6 +567,26 @@ Else
         SetTimer, DismissPDAerrors, Off
         ;; DEFAULT 600000 MS = 10 minutes
 }
+Return
+
+
+
+LaunchRazerCortexLabel:
+IniRead, aCortexContainer, %config_path%, CORTEX, CortexContainer, 1
+
+Run, %aCortexContainer%
+
+Return
+
+CloseCortexWindow:
+PostMessage, 0x0112, 0xF060,,, Razer Cortex, ; 0x0112 = WM_SYSCOMMAND, 0xF060 = SC_CLOSE
+Return
+
+
+
+
+LaunchPDANetLabel:
+Run, %PDATarget%
 Return
 
 
