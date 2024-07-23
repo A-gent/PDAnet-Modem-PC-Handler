@@ -19,7 +19,7 @@ I prefer to use a laptop with a Type-C port and an ethernet port as a "Modem" PC
   
 1.) Download and install [AutoHotkey version 1.1](https://autohotkey.com/download/ahk-install.exe).
 
-2.) Download either the [latest release of this modem script](google.com) or [directly download the repo files]([google.com](https://github.com/A-gent/PDAnet-Modem-PC-Handler/archive/refs/heads/main.zip).
+2.) Download either the [latest release of this modem script](google.com) or [directly download the repo files]([google.com](https://github.com/A-gent/PDAnet-Modem-PC-Handler/archive/refs/heads/main.zip)).
 
 3.) Unzip the contents of this zip file to any location that you wish it to run from. (If you don't want to use the pre-compiled .exe file, compile the .ahk file manually by right clicking and clicking compile script)
   
