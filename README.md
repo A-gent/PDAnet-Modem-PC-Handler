@@ -22,4 +22,4 @@ If the "AutoHotspot" switch in the modemConfig.cfg file equals 1, it will Force 
 | DismissMessageSpeed |      PDANET               |    $1 |    |    |
 | AppTitleRoot |      ENGINE                      |    $1 |    |    |
 | Debugger |      DEBUG                           |    $1 |    |    |
-| DebuggerLevel |      DEBUG                      |    $1 |    |    |
+| DebuggerLevel |      DEBUG                      |    1, 2, 3, 4, 4.1, 4.2 |    |    |
