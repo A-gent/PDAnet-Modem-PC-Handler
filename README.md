@@ -6,7 +6,7 @@ If the "AutoHotspot" switch in the modemConfig.cfg file equals 1, it will Force 
 
 ## "modemConfig.cfg" SETTINGS FILE TABLE
 <p align="center">
-
+Below is a table of contents with the names of each configurable setting, its corresponding default value, acceptable value ranges, and description explaining its purpose and use.
 </p>
 
 | CONFIG FILE COMMAND   |      SECTION      |  VALUE RANGE | DEFAULT VALUE | DESCRIPTION |
