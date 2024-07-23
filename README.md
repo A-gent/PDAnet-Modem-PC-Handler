@@ -35,7 +35,7 @@ ON THE MODEM PC (OR THE PC YOU WANT TO USE WINDOWS HOTSPOT WITH PDANET):<br>
 
 6.) Enable Powershell script execution: <br> -Hit windows key, type powershell.exe, right click and right as administrator. <br> -In the Powershell terminal run this command:  set-executionpolicy remotesigned <br> -When prompted if you are sure, just type A and hit enter to say "Yes To All".
 
-7.) Now configure your settings inside of the "modemConfig.cfg" file (with notepad), using the table below, then reboot your PC. The script will be running in your taskbar tray. If you right click it, there are controls to micro-manage the application directly from its Tray Menu.
+7.) Now configure your settings inside of the "modemConfig.cfg" file (with notepad), using the table below, then reboot your PC. The script will be running in your taskbar tray. If you right click it, there are controls to micro-manage the application directly from its Tray Menu if you wish to do so, but otherwise just let it autopilot.
 <br>
 
 </p>
