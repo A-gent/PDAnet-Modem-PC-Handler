@@ -3,8 +3,10 @@
 This program offers a few functionalities to pair with a PdaNet setup.
 If the "AutoHotspot" switch in the modemConfig.cfg file equals 1, it will Force the computer to silently 
 
+
+## "modemConfig.cfg" SETTINGS FILE TABLE
 <p align="center">
-# "modemConfig.cfg" SETTINGS FILE TABLE
+
 </p>
 
 | CONFIG FILE COMMAND   |      SECTION      |  VALUE RANGE | DEFAULT VALUE | DESCRIPTION |
