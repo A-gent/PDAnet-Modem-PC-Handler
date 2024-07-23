@@ -6,7 +6,7 @@ If the "AutoHotspot" switch in the modemConfig.cfg file equals 1, it will Force 
 
 | Config File Command   |      Section      |  Value Range | Default Value | Description |
 |-----------------------|:-----------------:|-------------:|--------------:|------------:|
-| AutoHotspot |                    SWITCHES       |   0-1 |             1  |   If enabled, runs a timer thread that executes a powershell script to force a Windows Hotspot open, and periodically re-runs this script to keep it open. Automatically closes powershell instances left open in the background. |
+| AutoHotspot |                    SWITCHES       |   0-1 |             1  |   If equals 1, runs a timer thread that executes a powershell script to force a Windows Hotspot open, and periodically re-runs that script to keep it open. Automatically launches a secondary timer thread that closes powershell instances left open in the background. |
 | AutoConnect |                    SWITCHES       |   0-1 |             1  |    |
 | DoubleCleanupPass |              SWITCHES       |   0-1 |             1  |   HotSpotCleanupThread |
 | HotspotAdapterSetAutoDHCP |      SWITCHES       |   0-1 |             1  |    |
