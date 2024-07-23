@@ -12,7 +12,7 @@ I prefer to use a laptop with a Type-C port and an ethernet port as a "Modem" PC
 <br>
 <br>
 
-This program can also poll for internet access and 
+This program can also poll for internet access and if it detects its not connected, it can attempt to force PdaNet to reconnect to your phone (very useful for the micro drops that sometimes occur with PdaNet).
 
 <br>
 <br>
