@@ -3,7 +3,7 @@
 This program offers a few functionalities to pair with a PdaNet setup.
 If the "AutoHotspot" switch in the modemConfig.cfg file equals 1, it will Force the computer to silently 
 
-
+# <center> "modemConfig.cfg" SETTINGS FILE TABLE </center>
 | CONFIG FILE COMMAND   |      SECTION      |  VALUE RANGE | DEFAULT VALUE | DESCRIPTION |
 |-----------------------|:-----------------:|-------------:|--------------:|------------:|
 | AutoHotspot |                    SWITCHES       |   0-1 |           1    |   If equals 1, runs a timer thread that executes a powershell script to force a Windows Hotspot open, and periodically re-runs that script to keep it open.<br> The time inbetween executions is configurable below.<br><br> Automatically launches a secondary timer thread that closes powershell instances left open in the background. |
