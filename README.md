@@ -14,7 +14,7 @@ I prefer to use a laptop with a Type-C port and an ethernet port as a "Modem" PC
 
 ## SETUP
 
-<p align="center">
+<p align="left">
 1.) 
 </p>
 
