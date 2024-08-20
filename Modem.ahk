@@ -121,6 +121,9 @@ Menu, Tray, Tip, %AppTitleRoot%
 IniRead, MainHotspotSwitch, %config_path%, SWITCHES, AutoHotspot, 1
 GLOBAL HotspotSwitch := MainHotspotSwitch
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+IniRead, SimplifiedAutoConnectSwitch, %config_path%, SWITCHES, SimpleAutoConnect, 0
+GLOBAL SimpleAutoConnect := SimplifiedAutoConnectSwitch
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 IniRead, MainDoubleCleanupSwitch, %config_path%, SWITCHES, DoubleCleanupPass, 1
 GLOBAL DoubleCleanupSwitch := MainDoubleCleanupSwitch
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -206,11 +209,30 @@ SetTimer, HotSpotThread, %HotspotExecuteSpeed%
 SetTimer, HotSpotCleanupThread, %HotspotCleanupSpeed%
 }
 
+
+
 If(AutoConnect="1")
 {
+    IniWrite, 0, %config_path%, SWITCHES, SimpleAutoConnect
+    IniRead, SimplifiedAutoConnectSwitch, %config_path%, SWITCHES, SimpleAutoConnect, 0
+    GLOBAL SimpleAutoConnect := SimplifiedAutoConnectSwitch
+    SetTimer, UnintelligentAutoConnect, Off
+
     SetTimer, DetermineInternetConnectivity, %AutoConnectSpeed%
     SetTimer, DeleteDownloadTest, %DeleteDownloadTestSpeed%
 }
+If(SimpleAutoConnect="1")
+{
+    IniWrite, 0, %config_path%, SWITCHES, AutoConnect
+    IniRead, aAutoConnect, %config_path%, SWITCHES, AutoConnect, 1
+    GLOBAL AutoConnect := aAutoConnect
+    SetTimer, DetermineInternetConnectivity, Off
+    SetTimer, DeleteDownloadTest, Off
+
+    SetTimer, UnintelligentAutoConnect, %SimpAutoConnectSpeed%
+}
+
+
 
 If(DismissMessages="1")
 {
@@ -281,6 +303,9 @@ GLOBAL AutoConnect := aAutoConnect
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 IniRead, aAutoConnectSpeed, %config_path%, CONFIG, AutoConnectSpeed, 23000
 GLOBAL AutoConnectSpeed := aAutoConnectSpeed
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+IniRead, aSimpAutoConnectSpeed, %config_path%, CONFIG, SimpleAutoConnectSpeed, 15000
+GLOBAL SimpAutoConnectSpeed := aSimpAutoConnectSpeed
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 IniRead, aPDAdirectory, %config_path%, PDANET, Container, C:\Program Files (x86)\PdaNet for Android
@@ -537,6 +562,28 @@ If(DevDebugger="1")
 ;;;;;;;
 ;;;;;;;
 Return
+
+
+
+UnintelligentAutoConnect:
+    If(DevDebugger="1")
+    {
+    If(DevDebuggerLevel="4.1")
+        {
+        MsgBox, 4096, %DbgTitle0x04%, Simplified Unintelligent Auto-Connect Routine executed. `n`n PDANet Executable Called without Internet check calls!, %DbgGlobalTimeout%
+        }
+    }
+    ;;;;;;;
+    ;;;;;;;
+    ;;;;;;;
+    Run, %PDATarget%
+Return
+
+
+
+
+
+
 
 
 DismissPDAerrors:
