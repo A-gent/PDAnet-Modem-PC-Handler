@@ -2,7 +2,7 @@
 
 <p align="left">
 This program offers a few functionalities to pair with a PdaNet setup.
-If can silently force the computer to host and upkeep a Windows Hotspot for using a computer as an access point for your PdaNet connection. This can be a weaker option for people with weaker WiFi cards though, because the quality of your WiFi card on your PdaNet-connected Windows PC will bottleneck the stability and speed of your WiFi network's connection. If said PC has a very good dedicated (or even onboard) WiFi card/chip, then this can be a decent choice. But the more clients / devices you have connected to your Windows Hotspot, the more the quality will degrade even if you have a very good WiFi card/chip.
+It can silently force the computer to host and upkeep a Windows Hotspot for using a computer as an access point for your PdaNet connection. This can be a weaker option for people with weaker WiFi cards though, because the quality of your WiFi card on your PdaNet-connected Windows PC will bottleneck the stability and speed of your WiFi network's connection. If said PC has a very good dedicated (or even onboard) WiFi card/chip, then this can be a decent choice. But the more clients / devices you have connected to your Windows Hotspot, the more the quality will degrade even if you have a very good WiFi card/chip.
 </p>
 <br>
   
