@@ -12,7 +12,7 @@ I prefer to use a laptop with a Type-C port and an ethernet port as a "Modem" PC
 <br>
 <br>
 
-This program can also poll for internet access and if it detects its not connected, it can attempt to force PdaNet to reconnect to your phone (very useful for the micro drops that sometimes occur with PdaNet).
+This program can also poll for internet access and if it detects its not connected, it can attempt to force PdaNet to reconnect to your phone (very useful for the micro drops that sometimes occur with PdaNet). If the internet polls as disconnected 6 times in a row in this way, internet connection sharing is automatically turned off and machine is automatically rebooted. On logon, it sets internet connection sharing again.
 
 The program also includes functionality to handle Razer Cortex, useful to pare back unneeded Windows features on a laptop "Modem" PC if you are going to run it that way.
 
